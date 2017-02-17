@@ -1,20 +1,24 @@
 Benchmarking using MPI clusters in the cloud:
---------------------------------------
+---------------------------------------------
 
 This program is used to evaluate the performance of Tachyon and HPCC benchmark using MPI cluster in the cloud.
 
-All the VM's are installed with Benchmarks to be ran and compiled.
+NOTE: All the VM's are installed with Benchmarks to be ran.
 
 Steps to run:
+-------------
 
 1. Setup fours VM's with Tachyon and HPCC benchmarks installed.
-2. Use one system as master and the rest three nodes as slaves. Best way to setup is to do all the installation work in one node and take snapshot
-of it.
+
+2. Use one system as master and the rest three nodes as slaves. Best way to setup is to do all the installation work in one node and take snapshot of it.
+
 3. Try to create a shared folder by means of NFS, such that there is no need to copy the executable to run it in the slave nodes.
+
 4. Once all the setup is done. Create an mpi_hosts file to know the worker or slave nodes.
-5. Next try to run the file assign.py with different options. Option 'becnchmark' can be given either hpcc or tachyon and option 'sched' is given
-either byslot or bynode.
+
+5. Next try to run the file assign.py with different options. Option 'becnchmark' can be given either hpcc or tachyon and option 'sched' is given either byslot or bynode.
 
 Example: python assign1.py -benchmark tachyon -shced hpcc
 ---------------------------------------------------------
-6. After the successfull completion for cluster size 1, 2 and 3, a graph is generated using matplot lib. For sample check performance.pdf file.
+
+6. After the successful completion for different cluster size, a graph is generated using matplotlib. For samples check performance.pdf file.
