@@ -1,0 +1,7 @@
+******************
+Installation Steps
+******************
+1. Check for 3 python files assign1.py, tachyon.py, hpcc.py & mpi_host.
+2. Copy all the files in shared_folder directory. 
+	 NOTE: it mandatory to copy all the files in this folder.
+3. Now start running assign1.py file with corresponding options as decribed in the help menu. 
